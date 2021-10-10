@@ -2563,6 +2563,18 @@ react-refresh@0.8.3:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
 
+react-tilt@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/react-tilt/-/react-tilt-0.1.4.tgz#0ac1f33674a3fff6c617cf411002d7ecdd2ebcb1"
+  integrity sha512-bVeRumg+RIn6QN8S92UmubGqX/BG6/QeQISBeAcrS/70dpo/jVj+sjikIawDl5wTuPdubFH8zH0EMulWIctsnw==
+
+react-vanilla-tilt@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-vanilla-tilt/-/react-vanilla-tilt-1.0.0.tgz#ea2ab3d1e75ebbbca862a35664aee6837ffd5918"
+  integrity sha512-AuFFvbudpQIdzPeci9kP4p4Mo3QVIEtFVNu+iskMzNT0Efhi1fH5wzmdfMqWX8g82ypVgjAlwgdBWL9opnL2ow==
+  dependencies:
+    vanilla-tilt "1.4.1"
+
 react@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
@@ -3209,6 +3221,16 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+vanilla-tilt@1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/vanilla-tilt/-/vanilla-tilt-1.4.1.tgz#7dae5fe5904c160140b92e586a1ddd81c93bc4a9"
+  integrity sha512-yZS4jIejmhqThLlwzJ5juPwDMk6rtf+ekADDK1lAYNiw6H2VGAJr9bt8vCp+ED5kyK6sE0sMq6mxPfV8a/NdFw==
+
+vanilla-tilt@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/vanilla-tilt/-/vanilla-tilt-1.7.2.tgz#59a5565d9f1f6d392a36969f223fb600dd101a81"
+  integrity sha512-arf2wY2Y65rP6Zxve9PnUUnRl9nQ1KenPNae6QRaVq/PEvaIto2bC4jYirNJ19U7nLkzI1H9O+nYtcQlX7BTsA==
 
 vm-browserify@1.1.2, vm-browserify@^1.0.1:
   version "1.1.2"

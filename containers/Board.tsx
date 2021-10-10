@@ -1,6 +1,5 @@
 import {useState, useEffect} from "react";
-import Square from "../components/Square"
-
+import Square from "../components/Square";
 type Player = "X" | "O"| "BOTH" | null;
 
 const calculateWinner = (squares: Player[]) => {
@@ -63,29 +62,36 @@ const Board = () => {
     console.log("asdasd ", winner);
     
     return (
-        <div>
-           {!winner && <p>Hey {currentPlayer}, it's your turn</p> }
-            {winner && winner === 'BOTH' && <p> You're both tie!</p>}
-            {winner && winner !== 'BOTH' && <p>Congratulations!! {winner} wins!</p>}
+        // <Tilt>
+            <div className="container" data-tilt>
+            <div className="content" >
+                <h1>Tic Tac Toe</h1>
+                {!winner && <p>Hey {currentPlayer}, it's your turn</p> }
+                {winner && winner === 'BOTH' && <p> You're both tie!</p>}
+                {winner && winner !== 'BOTH' && <p>Congratulations!! {winner} wins!</p>}
 
-            <div className="grid">
-                {Array(9).fill(null).map((_, i) => {
-                    return (
-                        <Square 
-                            winner={winner}
-                            key={i} 
-                            onClick = {() => setSquareValue(i)} 
-                            value={squares[i]}
-                        
-                        />
-                    )
-                })}
+                <div className="grid">
+                    {Array(9).fill(null).map((_, i) => {
+                        return (
+                            <Square 
+                                winner={winner}
+                                key={i} 
+                                onClick = {() => setSquareValue(i)} 
+                                value={squares[i]}
+                            
+                            />
+                        )
+                    })}
+                </div>
+                <div className='button-wrap'>
+                    <button className="reset" onClick={reset}> Play Again! </button>
+                </div>
             </div>
-            <div className='button-wrap'>
-                <button className="reset" onClick={reset}> Play Again! </button>
-            </div>
+           
 
         </div>
+        
+        
     )
 }
 

@@ -1,3 +1,4 @@
+
 type Player = 'X' | 'O' |'BOTH' | null
 
 const Square = ({
