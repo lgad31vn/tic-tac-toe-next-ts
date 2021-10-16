@@ -1,17 +1,25 @@
-
-type Player = 'X' | 'O' |'BOTH' | null
+type Player = "X" | "O" | "BOTH" | null;
 
 const Square = ({
-    value, onClick, winner
+  value,
+  onClick,
+  winner,
 }: {
-    winner: Player
-    value: Player
-    onClick: () => void
+  winner: Player;
+  value: Player;
+  onClick: () => void;
 }) => {
-    if (!value) {
-        return <button className="square" onClick={onClick} disabled = {Boolean(winner)}/> 
-    }
-    return <button className={`square square_${value.toLowerCase()}`} disabled> {value} </button>
-}
+  if (!value) {
+    return (
+      <button className="square" onClick={onClick} disabled={Boolean(winner)} />
+    );
+  }
+  return (
+    <button className={`square square_${value.toLowerCase()}`} disabled>
+      {" "}
+      {value}{" "}
+    </button>
+  );
+};
 
-export default Square 
+export default Square;

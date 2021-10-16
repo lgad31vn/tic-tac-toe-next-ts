@@ -7,20 +7,22 @@ body {
 body::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 400px;
   width: 100%;
   height: 100%;
+  left: 600px;
   background: linear-gradient(#f00, #f0f);
-  clip-path: circle(30% at right 70%);
+  clip-path: circle(30%);
 }
 body::after {
   content: "";
   position: absolute;
-  top: 0;
+  bottom: 250px;
+  right: 400px;
   width: 100%;
   height: 100%;
   background: linear-gradient(#2196f3, #e91e63);
-  clip-path: circle(20% at 10% 10%);
+  clip-path: circle(20%);
 }
 
 .container {

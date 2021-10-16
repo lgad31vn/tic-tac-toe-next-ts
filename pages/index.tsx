@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Board from '../containers/Board';
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Board from "../containers/Board";
+import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
@@ -14,10 +14,8 @@ const Home = () => {
       <main className={styles.main}>
         <Board />
       </main>
-
-      
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
