@@ -1,4 +1,4 @@
-type Player = "X" | "O" | "BOTH" | null;
+type Player = 'X' | 'O' | 'BOTH' | null;
 
 const Square = ({
   value,
@@ -11,13 +11,13 @@ const Square = ({
 }) => {
   if (!value) {
     return (
-      <button className="square" onClick={onClick} disabled={Boolean(winner)} />
+      <button className='square' onClick={onClick} disabled={Boolean(winner)} />
     );
   }
   return (
     <button className={`square square_${value.toLowerCase()}`} disabled>
-      {" "}
-      {value}{" "}
+      {' '}
+      {value}{' '}
     </button>
   );
 };
